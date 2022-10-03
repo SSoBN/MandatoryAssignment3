@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Mandatory Assignment 3</title>
+</head>
+<body>
+    <div id="app">
+        <h1>String duplication</h1>
+        <label for="">Message</label>
+        <input class="form-control" v-model.lazy="stringToDuplicate" type="text" placeholder="what to duplicate"/> 
+        <span>How many</span>
+        <input class="form-control" v-model.number.lazy="numberOfTimes" type="number" placeholder="how many times"/>
+        <button class="btn btn-primary col-lg-2" @click="duplicate()">Do It!</button>
+        <div>{{result}}</div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
